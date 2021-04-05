@@ -1,0 +1,291 @@
+/*Basic reset*/
+* {
+    box-sizing: content-box;
+    padding: 0; 
+    margin: 0; 
+}
+
+body {
+    color: #1a1a1a; 
+    background: #fdfdfd; 
+    font-family: verdana, sans-serif; 
+    line-height: 1.2; 
+}
+
+a {
+    color: #003bff; 
+    text-decoration: none; 
+}
+
+img {
+    border-radius: 4px; 
+}
+
+li {
+    list-style: none; 
+}
+
+.container {
+    padding: 0.5rem; 
+    margin: 0.5rem; 
+}
+
+header {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;    
+}
+
+header p {
+    font-size: 1.6rem; 
+}
+
+header li {
+    padding: 0.6rem; 
+    display: inline-block;
+}
+
+header nav a:hover {
+    color: rgba(0, 59, 255, 0.7);
+}
+
+.hero {
+    height: 26vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 2.6rem; 
+    margin-top: -1rem;
+}
+
+.hero p {
+    font-size: 1.2rem; 
+}
+
+hr {
+    border-radius: 50%; 
+    border: px solid rgba(162, 162, 162, 0.8); 
+}
+
+.blog-archive {
+    margin: 1.4rem 1rem 0 0; 
+}
+
+.blog-post {
+    margin-bottom: 2.4rem; 
+}
+
+.blog-post p::after {
+    content: 'Read More'; 
+    font-weight: bold; 
+    color: #0076ff;
+    display: inline; 
+    transition: 0.1s; 
+    padding: 0 0.3rem; 
+}
+
+.blog-post p:hover::after {
+    cursor: pointer; 
+}
+
+.blog-post img {
+    width: 100%; 
+    margin-bottom: 0.6rem; 
+}
+
+.pagination {
+    margin-bottom: 2.2rem; 
+}
+
+.pagination a {
+    color: #f2f9ff; 
+    background: #1f1f1f; 
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px; 
+    transition: 0.1s; 
+}
+
+.pagination a:hover {
+    color: #1f1f1f;
+    background: #f2f9ff; 
+}
+
+.pagination :nth-of-type(5) {
+    color: #1f1f1f;
+    background: #f2f9ff; 
+    border: 1px solid #ccc; 
+}
+
+.ads {
+    padding: 0.6rem;
+    border-radius: 4px; 
+    border: 1px solid #8d8d8d; 
+}
+
+.ads img {
+    width: 100%; 
+    margin-bottom: 0.6rem; 
+}
+
+.ads p {
+    font-weight: bold;
+    margin-bottom: 0.6rem; 
+}
+
+.ads input, .subscribe input {
+    padding: 0.3rem; 
+    border: 1px solid #888; 
+    border-radius: 3px; 
+}
+
+.ads input[type=submit] {
+    color: #fff; 
+    background: #0f155d; 
+    font-weight: bold; 
+    border: 1px solid #0f155d; 
+    cursor: pointer; 
+}
+
+.ads input[type=submit]:hover {
+    color: #e5e5e5; 
+    background: rgba(15, 21, 93, 0.9); 
+    border: 1px solid rgba(15, 21, 93, 0.9); 
+}
+
+.ads input {
+    width: 96%; 
+    margin-bottom: 1rem; 
+}
+
+.subscribe {
+    background: linear-gradient(45deg, rgb(0, 88, 255), rgb(167, 0, 255)); 
+    padding: 1.8rem 0.8rem; 
+    margin: 1.4rem 0; 
+    text-align: center; 
+}
+
+.subscribe p {
+    font-size: 1.6rem; 
+    margin-bottom: 1rem; 
+}
+
+.subscribe input {
+    width: 90%; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 0.4rem; 
+    margin-bottom: 0.7rem; 
+    border: 1px solid #f2f2f2; 
+    border-radius: 3px; 
+    outline: none; 
+    transition: 0.2s; 
+}
+
+.subscribe input[type=text]:focus, .subscribe input[type=email]:focus {
+    background: #fff; 
+}
+
+.subscribe input[type=submit] {
+    font-weight: bold; 
+    background: #fdfdfd; 
+    cursor: pointer; 
+}
+
+.subscribe input[type=submit]:hover {
+    color: #333;
+    background: rgba(253, 253, 253, 0.8); 
+}
+
+.subscribe input[type=submit]:active {
+    color: #8b8b8b;
+}
+
+footer {
+    color: #f2f2f2; 
+    background: rgba(0, 0, 0, 0.97); 
+    padding: 1.6rem; 
+}
+
+footer a {
+    color: #f2f2f2; 
+}
+
+.about, .footer-nav, .footer-links {
+    margin-bottom: 1rem; 
+}
+
+.footer-nav a:hover, .footer-links a:hover {
+    text-decoration: underline; 
+}
+
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    
+    main {
+        display: flex; 
+        margin-top: 1.4rem; 
+    }
+    
+    aside {
+        width: 30%; 
+    }
+    
+    .ads {
+        border: none; 
+        margin-top: -0.6rem; 
+        position: sticky; 
+        top: 0; 
+        
+    }
+    
+    .blog-archive {
+        width: 70%; 
+        margin-top: -0.01rem; 
+    }
+    
+    .blog-post img {
+        height: 280px; 
+        overflow: hidden; 
+        object-fit: cover; 
+    }
+    
+    .subscribe input {
+        width: auto; 
+        padding: 0.4rem 1rem; 
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

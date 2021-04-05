@@ -1,0 +1,74 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #1c1c1c;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    border: 20px solid rgba(0, 0, 0, 0.06); 
+    border-radius: 3px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    padding: 1rem;
+    width: 80%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+
+.form-group {
+    padding: 2rem 3rem;     
+}
+
+.form-control {
+    background-color: rgba(0,0,0,0.02); 
+    padding: 0.4rem; 
+    border-width: 1px; 
+    border-style: solid;
+    border-color: transparent transparent #777 transparent; 
+}
+
+.form-label {
+    padding: 0.4rem; 
+    display: block; 
+    transform: translateY(-1.8rem);
+    transform-origin: 0 0;
+    opacity: 1; 
+}
+
+.form-control::placeholder {
+    color: transparent; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

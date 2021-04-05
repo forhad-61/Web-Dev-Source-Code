@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #1c1c1c;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+a {
+    text-decoration: none; 
+    color: #0045ff; 
+}
+
+.container {
+    border: 20px solid rgba(0, 0, 0, 0.06); 
+    border-radius: 3px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    padding: 1rem;
+    width: 80%; 
+    display: flex; 
+}
+
+form {
+    padding: 2rem; 
+    flex: 1; 
+}
+
+.btn {
+    color: rgba(235, 235, 235, 0.8); 
+    background: #1b1b48; 
+    font-weight: bold;
+    font-family: inherit; 
+    text-align: center;
+    width: 100%;
+    padding: 0.6rem 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    border-radius: 3px; 
+    border: 1px solid #1b1b48; 
+    transition: 0.2s; 
+    position: relative;
+    cursor: pointer; 
+}
+
+.btn:hover {
+     background: rgba(27, 27, 72, 0.8);
+     border: 1px solid rgba(27, 27, 72, 0.8);
+}
+
+.btn-ghost img {
+    width: 1.7rem; 
+    margin-bottom: -8px; 
+}
+
+.btn-ghost {
+    color: #4d4d4d; 
+    background: transparent; 
+    border: 1px solid #eaeaea; 
+}
+
+.btn-ghost:hover {
+    color: rgba(77, 77, 77, 0.8); 
+    background: transparent; 
+    border: 1px solid #eaeaea; 
+    
+}
+
+label {
+    font-weight: bold; 
+    display: inline-block; 
+    margin-bottom: 0.5rem; 
+}
+
+input[type=text], input[type=password] {
+    width: 100%; 
+    padding: 0.6rem 1rem; 
+    border: 1px solid #e5e5e5; 
+    border-radius: 3px; 
+    margin-bottom: 1rem; 
+}
+
+.checkbox-container {
+    display: flex; 
+    font-size: 14px; 
+    justify-content: space-between;
+    margin-bottom: 15px; 
+    width: 100%; 
+}
+
+.checkbox-container label {
+    font-weight: normal; 
+}
+
+.checkbox-container input[type=checkbox] {
+    position: relative; 
+    bottom: -1px; 
+}
+
+.checkbox-container a {
+    font-weight: bold; 
+    margin-left: auto; 
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline; 
+}
+
+.sign-up {
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center; 
+}
+
+.sign-up span {
+    color: #003bff;
+    cursor: pointer; 
+}
+
+.sign-up span:hover {
+    text-decoration: underline; 
+}
+
+.features {
+    flex: 1.5; 
+    padding: 1.2rem; 
+    margin: 1.2rem; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.feature {
+    margin-bottom: 1.2rem; 
+    position: relative; 
+}
+
+.feature i {
+    position: absolute; 
+    top: 3px;
+    color: #2759ff; 
+}
+
+.feature h3 {
+    margin-left: 1.5rem; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        position: relative; 
+        top: 140px; 
+        flex-direction: column;
+    }
+    
+    .features {
+        text-align: center; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
